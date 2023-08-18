@@ -1,0 +1,509 @@
+Aug 15 11:22:20 10.71.60.0 tmp113222279-3727 Connection from 10.71.60.0 port 15508 on 216.250.113.178 port 22
+Aug 15 11:22:20 10.71.60.0 tmp113222279-3727 Accepted password for tmp113222279-3727 from 10.71.60.0 port 15508 ssh2
+Aug 15 11:22:21 10.71.60.0 tmp113222279-3727 Starting session: subsystem 'sftp' for tmp113222279-3727 from 10.71.60.0 port 15508 id 0
+Aug 15 11:22:21 10.71.60.0 tmp113222279-3727 session opened for local user tmp113222279-3727 from [10.71.60.0]
+Aug 15 11:25:47 10.71.60.0 tmp113222279-3727 open "/index.html" flags READ mode 0666
+Aug 15 11:25:47 10.71.60.0 tmp113222279-3727 close "/index.html" bytes read 336 written 0
+Aug 15 11:25:47 10.71.60.0 tmp113222279-3727 [10.71.60.0|get|0|336|0|0|0|2f696e6465782e68746d6c|]
+Aug 15 11:30:59 10.71.60.0 tmp113222279-3727 Connection closed by 10.71.60.0 port 15508
+Aug 15 11:30:59 10.71.60.0 tmp113222279-3727 session closed for local user tmp113222279-3727 from [10.71.60.0]
+Aug 15 11:56:06 10.71.60.0 tmp113222279-5041 Connection from 10.71.60.0 port 22628 on 216.250.113.178 port 22
+Aug 15 11:56:07 10.71.60.0 tmp113222279-5041 Accepted password for tmp113222279-5041 from 10.71.60.0 port 22628 ssh2
+Aug 15 11:56:07 10.71.60.0 tmp113222279-5041 Starting session: subsystem 'sftp' for tmp113222279-5041 from 10.71.60.0 port 22628 id 0
+Aug 15 11:56:07 10.71.60.0 tmp113222279-5041 session opened for local user tmp113222279-5041 from [10.71.60.0]
+Aug 15 11:56:42 10.71.60.0 tmp113222279-5041 open "/elements.html" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 11:56:42 10.71.60.0 tmp113222279-5041 close "/elements.html" bytes read 0 written 25373
+Aug 15 11:56:42 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|25373|0|0|0|2f656c656d656e74732e68746d6c|]
+Aug 15 11:56:43 10.71.60.0 tmp113222279-5041 open "/generic.html" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 11:56:43 10.71.60.0 tmp113222279-5041 close "/generic.html" bytes read 0 written 10954
+Aug 15 11:56:43 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|10954|0|0|0|2f67656e657269632e68746d6c|]
+Aug 15 11:56:47 10.71.60.0 tmp113222279-5041 open "/index.html" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 11:56:47 10.71.60.0 tmp113222279-5041 close "/index.html" bytes read 0 written 10475
+Aug 15 11:56:47 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|10475|0|0|0|2f696e6465782e68746d6c|]
+Aug 15 11:57:06 10.71.60.0 tmp113222279-5041 Connection from 10.71.60.0 port 22724 on 216.250.113.178 port 22
+Aug 15 11:57:06 10.71.60.0 tmp113222279-5041 Accepted password for tmp113222279-5041 from 10.71.60.0 port 22724 ssh2
+Aug 15 11:57:07 10.71.60.0 tmp113222279-5041 mkdir name "/images" mode 0777
+Aug 15 11:57:07 10.71.60.0 tmp113222279-5041 [10.71.60.0|mkdir|0|0|511|0|0|2f696d61676573|]
+Aug 15 11:57:16 10.71.60.0 tmp113222279-5041 mkdir name "/assets" mode 0777
+Aug 15 11:57:16 10.71.60.0 tmp113222279-5041 [10.71.60.0|mkdir|0|0|511|0|0|2f617373657473|]
+Aug 15 11:57:43 10.71.60.0 tmp113222279-5041 open "/images/pic07.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 11:57:43 10.71.60.0 tmp113222279-5041 close "/images/pic07.jpg" bytes read 0 written 10854
+Aug 15 11:57:43 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|10854|0|0|0|2f696d616765732f70696330372e6a7067|]
+Aug 15 11:57:45 10.71.60.0 tmp113222279-5041 open "/images/pic04.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 11:57:45 10.71.60.0 tmp113222279-5041 close "/images/pic04.jpg" bytes read 0 written 21412
+Aug 15 11:57:45 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|21412|0|0|0|2f696d616765732f70696330342e6a7067|]
+Aug 15 11:57:46 10.71.60.0 tmp113222279-5041 open "/images/pic06.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 11:57:47 10.71.60.0 tmp113222279-5041 close "/images/pic06.jpg" bytes read 0 written 21564
+Aug 15 11:57:47 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|1|21564|0|0|0|2f696d616765732f70696330362e6a7067|]
+Aug 15 11:57:47 10.71.60.0 tmp113222279-5041 open "/images/pic09.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 11:57:47 10.71.60.0 tmp113222279-5041 close "/images/pic09.jpg" bytes read 0 written 10350
+Aug 15 11:57:47 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|10350|0|0|0|2f696d616765732f70696330392e6a7067|]
+Aug 15 11:57:48 10.71.60.0 tmp113222279-5041 open "/images/pic08.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 11:57:48 10.71.60.0 tmp113222279-5041 close "/images/pic08.jpg" bytes read 0 written 10934
+Aug 15 11:57:48 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|10934|0|0|0|2f696d616765732f70696330382e6a7067|]
+Aug 15 11:57:50 10.71.60.0 tmp113222279-5041 open "/images/pic02.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 11:57:50 10.71.60.0 tmp113222279-5041 close "/images/pic02.jpg" bytes read 0 written 20986
+Aug 15 11:57:50 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|20986|0|0|0|2f696d616765732f70696330322e6a7067|]
+Aug 15 11:57:50 10.71.60.0 tmp113222279-5041 open "/images/pic10.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 11:57:51 10.71.60.0 tmp113222279-5041 close "/images/pic10.jpg" bytes read 0 written 70746
+Aug 15 11:57:51 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|1|70746|0|0|0|2f696d616765732f70696331302e6a7067|]
+Aug 15 11:57:51 10.71.60.0 tmp113222279-5041 open "/images/pic11.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 11:57:51 10.71.60.0 tmp113222279-5041 close "/images/pic11.jpg" bytes read 0 written 99292
+Aug 15 11:57:51 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|99292|0|0|0|2f696d616765732f70696331312e6a7067|]
+Aug 15 11:57:52 10.71.60.0 tmp113222279-5041 open "/images/pic03.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 11:57:52 10.71.60.0 tmp113222279-5041 close "/images/pic03.jpg" bytes read 0 written 21127
+Aug 15 11:57:52 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|21127|0|0|0|2f696d616765732f70696330332e6a7067|]
+Aug 15 11:57:52 10.71.60.0 tmp113222279-5041 open "/images/pic01.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 11:57:52 10.71.60.0 tmp113222279-5041 close "/images/pic01.jpg" bytes read 0 written 20660
+Aug 15 11:57:52 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|20660|0|0|0|2f696d616765732f70696330312e6a7067|]
+Aug 15 11:57:53 10.71.60.0 tmp113222279-5041 open "/images/pic05.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 11:57:53 10.71.60.0 tmp113222279-5041 close "/images/pic05.jpg" bytes read 0 written 21497
+Aug 15 11:57:53 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|21497|0|0|0|2f696d616765732f70696330352e6a7067|]
+Aug 15 11:59:25 10.71.60.0 tmp113222279-5041 mkdir name "/assets/sass" mode 0777
+Aug 15 11:59:25 10.71.60.0 tmp113222279-5041 [10.71.60.0|mkdir|0|0|511|0|0|2f6173736574732f73617373|]
+Aug 15 11:59:42 10.71.60.0 tmp113222279-5041 open "/assets/sass/main.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 11:59:42 10.71.60.0 tmp113222279-5041 close "/assets/sass/main.scss" bytes read 0 written 1617
+Aug 15 11:59:42 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|1617|0|0|0|2f6173736574732f736173732f6d61696e2e73637373|]
+Aug 15 12:00:16 10.71.60.0 tmp113222279-5041 mkdir name "/assets/sass/components" mode 0777
+Aug 15 12:00:16 10.71.60.0 tmp113222279-5041 [10.71.60.0|mkdir|0|0|511|0|0|2f6173736574732f736173732f636f6d706f6e656e7473|]
+Aug 15 12:00:26 10.71.60.0 tmp113222279-5041 mkdir name "/assets/sass/libs" mode 0777
+Aug 15 12:00:26 10.71.60.0 tmp113222279-5041 [10.71.60.0|mkdir|0|0|511|0|0|2f6173736574732f736173732f6c696273|]
+Aug 15 12:00:33 10.71.60.0 tmp113222279-5041 mkdir name "/assets/sass/base" mode 0777
+Aug 15 12:00:33 10.71.60.0 tmp113222279-5041 [10.71.60.0|mkdir|0|0|511|0|0|2f6173736574732f736173732f62617365|]
+Aug 15 12:00:42 10.71.60.0 tmp113222279-5041 mkdir name "/assets/sass/layout" mode 0777
+Aug 15 12:00:42 10.71.60.0 tmp113222279-5041 [10.71.60.0|mkdir|0|0|511|0|0|2f6173736574732f736173732f6c61796f7574|]
+Aug 15 12:01:01 10.71.60.0 tmp113222279-5041 open "/assets/sass/components/_features.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:01:01 10.71.60.0 tmp113222279-5041 close "/assets/sass/components/_features.scss" bytes read 0 written 2919
+Aug 15 12:01:01 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|2919|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f66656174757265732e73637373|]
+Aug 15 12:01:03 10.71.60.0 tmp113222279-5041 open "/assets/sass/components/_mini-posts.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:01:03 10.71.60.0 tmp113222279-5041 close "/assets/sass/components/_mini-posts.scss" bytes read 0 written 577
+Aug 15 12:01:03 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|577|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f6d696e692d706f7374732e73637373|]
+Aug 15 12:01:05 10.71.60.0 tmp113222279-5041 open "/assets/sass/components/_contact.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:01:05 10.71.60.0 tmp113222279-5041 close "/assets/sass/components/_contact.scss" bytes read 0 written 760
+Aug 15 12:01:05 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|760|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f636f6e746163742e73637373|]
+Aug 15 12:01:05 10.71.60.0 tmp113222279-5041 open "/assets/sass/components/_row.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:01:06 10.71.60.0 tmp113222279-5041 close "/assets/sass/components/_row.scss" bytes read 0 written 630
+Aug 15 12:01:06 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|1|630|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f726f772e73637373|]
+Aug 15 12:01:06 10.71.60.0 tmp113222279-5041 open "/assets/sass/components/_actions.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:01:06 10.71.60.0 tmp113222279-5041 close "/assets/sass/components/_actions.scss" bytes read 0 written 1091
+Aug 15 12:01:06 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|1091|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f616374696f6e732e73637373|]
+Aug 15 12:01:06 10.71.60.0 tmp113222279-5041 open "/assets/sass/components/_button.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:01:06 10.71.60.0 tmp113222279-5041 close "/assets/sass/components/_button.scss" bytes read 0 written 1757
+Aug 15 12:01:06 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|1757|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f627574746f6e2e73637373|]
+Aug 15 12:01:07 10.71.60.0 tmp113222279-5041 open "/assets/sass/components/_icons.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:01:07 10.71.60.0 tmp113222279-5041 close "/assets/sass/components/_icons.scss" bytes read 0 written 424
+Aug 15 12:01:07 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|424|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f69636f6e732e73637373|]
+Aug 15 12:01:07 10.71.60.0 tmp113222279-5041 open "/assets/sass/components/_form.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:01:08 10.71.60.0 tmp113222279-5041 close "/assets/sass/components/_form.scss" bytes read 0 written 3924
+Aug 15 12:01:08 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|1|3924|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f666f726d2e73637373|]
+Aug 15 12:01:08 10.71.60.0 tmp113222279-5041 open "/assets/sass/components/_section.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:01:08 10.71.60.0 tmp113222279-5041 close "/assets/sass/components/_section.scss" bytes read 0 written 771
+Aug 15 12:01:08 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|771|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f73656374696f6e2e73637373|]
+Aug 15 12:01:09 10.71.60.0 tmp113222279-5041 open "/assets/sass/components/_posts.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:01:09 10.71.60.0 tmp113222279-5041 close "/assets/sass/components/_posts.scss" bytes read 0 written 3086
+Aug 15 12:01:09 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|3086|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f706f7374732e73637373|]
+Aug 15 12:01:10 10.71.60.0 tmp113222279-5041 open "/assets/sass/components/_pagination.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:01:10 10.71.60.0 tmp113222279-5041 close "/assets/sass/components/_pagination.scss" bytes read 0 written 1310
+Aug 15 12:01:10 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|1310|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f706167696e6174696f6e2e73637373|]
+Aug 15 12:01:10 10.71.60.0 tmp113222279-5041 open "/assets/sass/components/_icon.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:01:11 10.71.60.0 tmp113222279-5041 close "/assets/sass/components/_icon.scss" bytes read 0 written 482
+Aug 15 12:01:11 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|1|482|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f69636f6e2e73637373|]
+Aug 15 12:01:11 10.71.60.0 tmp113222279-5041 open "/assets/sass/components/_list.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:01:12 10.71.60.0 tmp113222279-5041 close "/assets/sass/components/_list.scss" bytes read 0 written 892
+Aug 15 12:01:12 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|1|892|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f6c6973742e73637373|]
+Aug 15 12:01:12 10.71.60.0 tmp113222279-5041 open "/assets/sass/components/_image.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:01:12 10.71.60.0 tmp113222279-5041 close "/assets/sass/components/_image.scss" bytes read 0 written 1107
+Aug 15 12:01:12 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|1107|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f696d6167652e73637373|]
+Aug 15 12:01:14 10.71.60.0 tmp113222279-5041 open "/assets/sass/components/_box.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:01:14 10.71.60.0 tmp113222279-5041 close "/assets/sass/components/_box.scss" bytes read 0 written 515
+Aug 15 12:01:14 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|515|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f626f782e73637373|]
+Aug 15 12:01:15 10.71.60.0 tmp113222279-5041 open "/assets/sass/components/_table.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:01:15 10.71.60.0 tmp113222279-5041 close "/assets/sass/components/_table.scss" bytes read 0 written 1291
+Aug 15 12:01:15 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|1291|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f7461626c652e73637373|]
+Aug 15 12:01:42 10.71.60.0 tmp113222279-5041 open "/assets/sass/libs/_mixins.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:01:42 10.71.60.0 tmp113222279-5041 close "/assets/sass/libs/_mixins.scss" bytes read 0 written 2218
+Aug 15 12:01:42 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|2218|0|0|0|2f6173736574732f736173732f6c6962732f5f6d6978696e732e73637373|]
+Aug 15 12:01:43 10.71.60.0 tmp113222279-5041 open "/assets/sass/libs/_functions.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:01:43 10.71.60.0 tmp113222279-5041 close "/assets/sass/libs/_functions.scss" bytes read 0 written 1957
+Aug 15 12:01:43 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|1957|0|0|0|2f6173736574732f736173732f6c6962732f5f66756e6374696f6e732e73637373|]
+Aug 15 12:01:44 10.71.60.0 tmp113222279-5041 open "/assets/sass/libs/_html-grid.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:01:44 10.71.60.0 tmp113222279-5041 close "/assets/sass/libs/_html-grid.scss" bytes read 0 written 2840
+Aug 15 12:01:44 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|2840|0|0|0|2f6173736574732f736173732f6c6962732f5f68746d6c2d677269642e73637373|]
+Aug 15 12:01:45 10.71.60.0 tmp113222279-5041 open "/assets/sass/libs/_vars.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:01:45 10.71.60.0 tmp113222279-5041 close "/assets/sass/libs/_vars.scss" bytes read 0 written 835
+Aug 15 12:01:45 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|835|0|0|0|2f6173736574732f736173732f6c6962732f5f766172732e73637373|]
+Aug 15 12:01:46 10.71.60.0 tmp113222279-5041 open "/assets/sass/libs/_breakpoints.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:01:46 10.71.60.0 tmp113222279-5041 close "/assets/sass/libs/_breakpoints.scss" bytes read 0 written 4577
+Aug 15 12:01:46 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|4577|0|0|0|2f6173736574732f736173732f6c6962732f5f627265616b706f696e74732e73637373|]
+Aug 15 12:01:47 10.71.60.0 tmp113222279-5041 open "/assets/sass/libs/_vendor.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:01:47 10.71.60.0 tmp113222279-5041 close "/assets/sass/libs/_vendor.scss" bytes read 0 written 7355
+Aug 15 12:01:47 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|7355|0|0|0|2f6173736574732f736173732f6c6962732f5f76656e646f722e73637373|]
+Aug 15 12:02:24 10.71.60.0 tmp113222279-5041 open "/assets/sass/base/_reset.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:02:24 10.71.60.0 tmp113222279-5041 close "/assets/sass/base/_reset.scss" bytes read 0 written 1569
+Aug 15 12:02:24 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|1569|0|0|0|2f6173736574732f736173732f626173652f5f72657365742e73637373|]
+Aug 15 12:02:25 10.71.60.0 tmp113222279-5041 open "/assets/sass/base/_typography.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:02:25 10.71.60.0 tmp113222279-5041 close "/assets/sass/base/_typography.scss" bytes read 0 written 3122
+Aug 15 12:02:25 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|3122|0|0|0|2f6173736574732f736173732f626173652f5f7479706f6772617068792e73637373|]
+Aug 15 12:02:26 10.71.60.0 tmp113222279-5041 open "/assets/sass/base/_page.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:02:26 10.71.60.0 tmp113222279-5041 close "/assets/sass/base/_page.scss" bytes read 0 written 1024
+Aug 15 12:02:26 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|1024|0|0|0|2f6173736574732f736173732f626173652f5f706167652e73637373|]
+Aug 15 12:02:49 10.71.60.0 tmp113222279-5041 open "/assets/sass/layout/_header.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:02:49 10.71.60.0 tmp113222279-5041 close "/assets/sass/layout/_header.scss" bytes read 0 written 904
+Aug 15 12:02:49 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|904|0|0|0|2f6173736574732f736173732f6c61796f75742f5f6865616465722e73637373|]
+Aug 15 12:02:50 10.71.60.0 tmp113222279-5041 open "/assets/sass/layout/_footer.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:02:50 10.71.60.0 tmp113222279-5041 close "/assets/sass/layout/_footer.scss" bytes read 0 written 296
+Aug 15 12:02:50 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|296|0|0|0|2f6173736574732f736173732f6c61796f75742f5f666f6f7465722e73637373|]
+Aug 15 12:02:51 10.71.60.0 tmp113222279-5041 open "/assets/sass/layout/_wrapper.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:02:51 10.71.60.0 tmp113222279-5041 close "/assets/sass/layout/_wrapper.scss" bytes read 0 written 301
+Aug 15 12:02:51 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|301|0|0|0|2f6173736574732f736173732f6c61796f75742f5f777261707065722e73637373|]
+Aug 15 12:02:52 10.71.60.0 tmp113222279-5041 open "/assets/sass/layout/_sidebar.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:02:52 10.71.60.0 tmp113222279-5041 close "/assets/sass/layout/_sidebar.scss" bytes read 0 written 4409
+Aug 15 12:02:52 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|4409|0|0|0|2f6173736574732f736173732f6c61796f75742f5f736964656261722e73637373|]
+Aug 15 12:02:53 10.71.60.0 tmp113222279-5041 open "/assets/sass/layout/_banner.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:02:53 10.71.60.0 tmp113222279-5041 close "/assets/sass/layout/_banner.scss" bytes read 0 written 1521
+Aug 15 12:02:53 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|1521|0|0|0|2f6173736574732f736173732f6c61796f75742f5f62616e6e65722e73637373|]
+Aug 15 12:02:54 10.71.60.0 tmp113222279-5041 open "/assets/sass/layout/_main.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:02:54 10.71.60.0 tmp113222279-5041 close "/assets/sass/layout/_main.scss" bytes read 0 written 993
+Aug 15 12:02:54 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|993|0|0|0|2f6173736574732f736173732f6c61796f75742f5f6d61696e2e73637373|]
+Aug 15 12:02:55 10.71.60.0 tmp113222279-5041 open "/assets/sass/layout/_menu.scss" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:02:55 10.71.60.0 tmp113222279-5041 close "/assets/sass/layout/_menu.scss" bytes read 0 written 1955
+Aug 15 12:02:55 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|1955|0|0|0|2f6173736574732f736173732f6c61796f75742f5f6d656e752e73637373|]
+Aug 15 12:03:24 10.71.60.0 tmp113222279-5041 mkdir name "/assets/css" mode 0777
+Aug 15 12:03:24 10.71.60.0 tmp113222279-5041 [10.71.60.0|mkdir|0|0|511|0|0|2f6173736574732f637373|]
+Aug 15 12:03:35 10.71.60.0 tmp113222279-5041 open "/assets/css/main.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:03:35 10.71.60.0 tmp113222279-5041 close "/assets/css/main.css" bytes read 0 written 61737
+Aug 15 12:03:35 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|61737|0|0|0|2f6173736574732f6373732f6d61696e2e637373|]
+Aug 15 12:03:37 10.71.60.0 tmp113222279-5041 open "/assets/css/fontawesome-all.min.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:03:37 10.71.60.0 tmp113222279-5041 close "/assets/css/fontawesome-all.min.css" bytes read 0 written 59401
+Aug 15 12:03:37 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|59401|0|0|0|2f6173736574732f6373732f666f6e74617765736f6d652d616c6c2e6d696e2e637373|]
+Aug 15 12:03:53 10.71.60.0 tmp113222279-5041 mkdir name "/assets/js" mode 0777
+Aug 15 12:03:53 10.71.60.0 tmp113222279-5041 [10.71.60.0|mkdir|0|0|511|0|0|2f6173736574732f6a73|]
+Aug 15 12:04:07 10.71.60.0 tmp113222279-5041 open "/assets/js/jquery.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:04:07 10.71.60.0 tmp113222279-5041 close "/assets/js/jquery.min.js" bytes read 0 written 89501
+Aug 15 12:04:07 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|89501|0|0|0|2f6173736574732f6a732f6a71756572792e6d696e2e6a73|]
+Aug 15 12:04:09 10.71.60.0 tmp113222279-5041 open "/assets/js/main.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:04:09 10.71.60.0 tmp113222279-5041 close "/assets/js/main.js" bytes read 0 written 5968
+Aug 15 12:04:09 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|5968|0|0|0|2f6173736574732f6a732f6d61696e2e6a73|]
+Aug 15 12:04:10 10.71.60.0 tmp113222279-5041 open "/assets/js/util.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:04:10 10.71.60.0 tmp113222279-5041 close "/assets/js/util.js" bytes read 0 written 12433
+Aug 15 12:04:10 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|12433|0|0|0|2f6173736574732f6a732f7574696c2e6a73|]
+Aug 15 12:04:10 10.71.60.0 tmp113222279-5041 open "/assets/js/breakpoints.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:04:11 10.71.60.0 tmp113222279-5041 close "/assets/js/breakpoints.min.js" bytes read 0 written 2439
+Aug 15 12:04:11 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|1|2439|0|0|0|2f6173736574732f6a732f627265616b706f696e74732e6d696e2e6a73|]
+Aug 15 12:04:11 10.71.60.0 tmp113222279-5041 open "/assets/js/browser.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:04:12 10.71.60.0 tmp113222279-5041 close "/assets/js/browser.min.js" bytes read 0 written 2051
+Aug 15 12:04:12 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|1|2051|0|0|0|2f6173736574732f6a732f62726f777365722e6d696e2e6a73|]
+Aug 15 12:04:29 10.71.60.0 tmp113222279-5041 mkdir name "/assets/webfonts" mode 0777
+Aug 15 12:04:29 10.71.60.0 tmp113222279-5041 [10.71.60.0|mkdir|0|0|511|0|0|2f6173736574732f776562666f6e7473|]
+Aug 15 12:04:44 10.71.60.0 tmp113222279-5041 open "/assets/webfonts/fa-regular-400.woff2" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:04:44 10.71.60.0 tmp113222279-5041 close "/assets/webfonts/fa-regular-400.woff2" bytes read 0 written 13224
+Aug 15 12:04:44 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|13224|0|0|0|2f6173736574732f776562666f6e74732f66612d726567756c61722d3430302e776f666632|]
+Aug 15 12:04:44 10.71.60.0 tmp113222279-5041 open "/assets/webfonts/fa-regular-400.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:04:44 10.71.60.0 tmp113222279-5041 close "/assets/webfonts/fa-regular-400.ttf" bytes read 0 written 33736
+Aug 15 12:04:44 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|33736|0|0|0|2f6173736574732f776562666f6e74732f66612d726567756c61722d3430302e747466|]
+Aug 15 12:04:45 10.71.60.0 tmp113222279-5041 open "/assets/webfonts/fa-regular-400.svg" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:04:45 10.71.60.0 tmp113222279-5041 close "/assets/webfonts/fa-regular-400.svg" bytes read 0 written 144714
+Aug 15 12:04:45 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|144714|0|0|0|2f6173736574732f776562666f6e74732f66612d726567756c61722d3430302e737667|]
+Aug 15 12:04:46 10.71.60.0 tmp113222279-5041 open "/assets/webfonts/fa-solid-900.eot" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:04:47 10.71.60.0 tmp113222279-5041 close "/assets/webfonts/fa-solid-900.eot" bytes read 0 written 203030
+Aug 15 12:04:47 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|1|203030|0|0|0|2f6173736574732f776562666f6e74732f66612d736f6c69642d3930302e656f74|]
+Aug 15 12:04:47 10.71.60.0 tmp113222279-5041 open "/assets/webfonts/fa-regular-400.eot" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:04:47 10.71.60.0 tmp113222279-5041 close "/assets/webfonts/fa-regular-400.eot" bytes read 0 written 34034
+Aug 15 12:04:47 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|34034|0|0|0|2f6173736574732f776562666f6e74732f66612d726567756c61722d3430302e656f74|]
+Aug 15 12:04:48 10.71.60.0 tmp113222279-5041 open "/assets/webfonts/fa-solid-900.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:04:48 10.71.60.0 tmp113222279-5041 close "/assets/webfonts/fa-solid-900.ttf" bytes read 0 written 202744
+Aug 15 12:04:48 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|202744|0|0|0|2f6173736574732f776562666f6e74732f66612d736f6c69642d3930302e747466|]
+Aug 15 12:04:48 10.71.60.0 tmp113222279-5041 open "/assets/webfonts/fa-solid-900.svg" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:04:48 10.71.60.0 tmp113222279-5041 close "/assets/webfonts/fa-solid-900.svg" bytes read 0 written 918991
+Aug 15 12:04:48 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|918991|0|0|0|2f6173736574732f776562666f6e74732f66612d736f6c69642d3930302e737667|]
+Aug 15 12:04:49 10.71.60.0 tmp113222279-5041 open "/assets/webfonts/fa-solid-900.woff2" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:04:49 10.71.60.0 tmp113222279-5041 close "/assets/webfonts/fa-solid-900.woff2" bytes read 0 written 78268
+Aug 15 12:04:49 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|78268|0|0|0|2f6173736574732f776562666f6e74732f66612d736f6c69642d3930302e776f666632|]
+Aug 15 12:04:50 10.71.60.0 tmp113222279-5041 open "/assets/webfonts/fa-solid-900.woff" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:04:50 10.71.60.0 tmp113222279-5041 close "/assets/webfonts/fa-solid-900.woff" bytes read 0 written 101648
+Aug 15 12:04:50 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|101648|0|0|0|2f6173736574732f776562666f6e74732f66612d736f6c69642d3930302e776f6666|]
+Aug 15 12:04:50 10.71.60.0 tmp113222279-5041 open "/assets/webfonts/fa-regular-400.woff" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:04:51 10.71.60.0 tmp113222279-5041 close "/assets/webfonts/fa-regular-400.woff" bytes read 0 written 16276
+Aug 15 12:04:51 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|1|16276|0|0|0|2f6173736574732f776562666f6e74732f66612d726567756c61722d3430302e776f6666|]
+Aug 15 12:04:52 10.71.60.0 tmp113222279-5041 open "/assets/webfonts/fa-brands-400.woff2" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:04:52 10.71.60.0 tmp113222279-5041 close "/assets/webfonts/fa-brands-400.woff2" bytes read 0 written 76736
+Aug 15 12:04:52 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|76736|0|0|0|2f6173736574732f776562666f6e74732f66612d6272616e64732d3430302e776f666632|]
+Aug 15 12:04:53 10.71.60.0 tmp113222279-5041 open "/assets/webfonts/fa-brands-400.woff" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:04:53 10.71.60.0 tmp113222279-5041 close "/assets/webfonts/fa-brands-400.woff" bytes read 0 written 89988
+Aug 15 12:04:53 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|89988|0|0|0|2f6173736574732f776562666f6e74732f66612d6272616e64732d3430302e776f6666|]
+Aug 15 12:04:54 10.71.60.0 tmp113222279-5041 open "/assets/webfonts/fa-brands-400.svg" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:04:54 10.71.60.0 tmp113222279-5041 close "/assets/webfonts/fa-brands-400.svg" bytes read 0 written 747927
+Aug 15 12:04:54 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|747927|0|0|0|2f6173736574732f776562666f6e74732f66612d6272616e64732d3430302e737667|]
+Aug 15 12:04:55 10.71.60.0 tmp113222279-5041 open "/assets/webfonts/fa-brands-400.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:04:55 10.71.60.0 tmp113222279-5041 close "/assets/webfonts/fa-brands-400.ttf" bytes read 0 written 133988
+Aug 15 12:04:55 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|133988|0|0|0|2f6173736574732f776562666f6e74732f66612d6272616e64732d3430302e747466|]
+Aug 15 12:04:55 10.71.60.0 tmp113222279-5041 open "/assets/webfonts/fa-brands-400.eot" flags WRITE,CREATE,TRUNCATE mode 0666
+Aug 15 12:04:55 10.71.60.0 tmp113222279-5041 close "/assets/webfonts/fa-brands-400.eot" bytes read 0 written 134294
+Aug 15 12:04:55 10.71.60.0 tmp113222279-5041 [10.71.60.0|put|0|134294|0|0|0|2f6173736574732f776562666f6e74732f66612d6272616e64732d3430302e656f74|]
+Aug 15 12:09:30 10.71.60.0 tmp113222279-5041 Connection closed by 10.71.60.0 port 22724
+Aug 15 12:10:06 10.71.60.0 tmp113222279-5041 Connection closed by 10.71.60.0 port 22628
+Aug 15 12:10:06 10.71.60.0 tmp113222279-5041 session closed for local user tmp113222279-5041 from [10.71.60.0]
+Aug 15 15:03:32 10.71.61.0 tmp113222279-6687 Connection from 10.71.61.0 port 34072 on 216.250.113.178 port 22
+Aug 15 15:03:33 10.71.61.0 tmp113222279-6687 Accepted password for tmp113222279-6687 from 10.71.61.0 port 34072 ssh2
+Aug 15 15:03:33 10.71.61.0 tmp113222279-6687 Starting session: subsystem 'sftp' for tmp113222279-6687 from 10.71.61.0 port 34072 id 0
+Aug 15 15:03:33 10.71.61.0 tmp113222279-6687 session opened for local user tmp113222279-6687 from [10.71.61.0]
+Aug 15 15:08:34 10.71.61.0 tmp113222279-6687 session closed for local user tmp113222279-6687 from [10.71.61.0]
+Aug 15 15:08:34 10.71.61.0 tmp113222279-6687 Connection closed by 10.71.61.0 port 34072
+Aug 16 11:24:22 10.71.60.0 tmp113222279-6547 Connection from 10.71.60.0 port 48706 on 216.250.113.178 port 22
+Aug 16 11:24:22 10.71.60.0 tmp113222279-6547 Accepted password for tmp113222279-6547 from 10.71.60.0 port 48706 ssh2
+Aug 16 11:24:22 10.71.60.0 tmp113222279-6547 Starting session: subsystem 'sftp' for tmp113222279-6547 from 10.71.60.0 port 48706 id 0
+Aug 16 11:24:22 10.71.60.0 tmp113222279-6547 session opened for local user tmp113222279-6547 from [10.71.60.0]
+Aug 16 11:24:27 10.71.61.0 tmp113222279-8363 Connection from 10.71.61.0 port 57458 on 216.250.113.178 port 22
+Aug 16 11:24:27 10.71.61.0 tmp113222279-8363 Accepted password for tmp113222279-8363 from 10.71.61.0 port 57458 ssh2
+Aug 16 11:24:28 10.71.61.0 tmp113222279-8363 Starting session: subsystem 'sftp' for tmp113222279-8363 from 10.71.61.0 port 57458 id 0
+Aug 16 11:24:28 10.71.61.0 tmp113222279-8363 session opened for local user tmp113222279-8363 from [10.71.61.0]
+Aug 16 11:29:28 10.71.61.0 tmp113222279-8363 session closed for local user tmp113222279-8363 from [10.71.61.0]
+Aug 16 11:29:28 10.71.61.0 tmp113222279-8363 Connection closed by 10.71.61.0 port 57458
+Aug 16 11:30:03 10.71.60.0 tmp113222279-6547 session closed for local user tmp113222279-6547 from [10.71.60.0]
+Aug 16 11:30:03 10.71.60.0 tmp113222279-6547 Connection closed by 10.71.60.0 port 48706
+Aug 18 12:43:14 10.71.60.0 u113222279 Connection from 10.71.60.0 port 63270 on 216.250.113.178 port 22 rdomain ""
+Aug 18 12:43:26 10.71.60.0 u113222279 Accepted password for u113222279 from 10.71.60.0 port 63270 ssh2
+Aug 18 12:43:26 10.71.60.0 u113222279 Starting session: subsystem 'sftp' for u113222279 from 10.71.60.0 port 63270 id 0
+Aug 18 12:43:26 10.71.60.0 u113222279 session opened for local user u113222279 from [10.71.60.0]
+Aug 18 12:43:56 10.71.60.0 u113222279 Connection from 10.71.60.0 port 63376 on 216.250.113.178 port 22 rdomain ""
+Aug 18 12:43:56 10.71.60.0 u113222279 Accepted password for u113222279 from 10.71.60.0 port 63376 ssh2
+Aug 18 12:43:56 10.71.60.0 u113222279 Connection from 10.71.60.0 port 63372 on 216.250.113.178 port 22 rdomain ""
+Aug 18 12:43:56 10.71.60.0 u113222279 Accepted password for u113222279 from 10.71.60.0 port 63372 ssh2
+Aug 18 12:43:57 10.71.60.0 u113222279 Starting session: subsystem 'sftp' for u113222279 from 10.71.60.0 port 63376 id 0
+Aug 18 12:43:57 10.71.60.0 u113222279 Starting session: subsystem 'sftp' for u113222279 from 10.71.60.0 port 63372 id 0
+Aug 18 12:43:57 10.71.60.0 u113222279 session opened for local user u113222279 from [10.71.60.0]
+Aug 18 12:43:57 10.71.60.0 u113222279 session opened for local user u113222279 from [10.71.60.0]
+Aug 18 12:43:57 10.71.60.0 u113222279 open "/elements.html" flags READ mode 0666
+Aug 18 12:43:57 10.71.60.0 u113222279 open "/generic.html" flags READ mode 0666
+Aug 18 12:43:57 10.71.60.0 u113222279 close "/generic.html" bytes read 10954 written 0
+Aug 18 12:43:57 10.71.60.0 u113222279 [10.71.60.0|get|0|10954|0|0|0|2f67656e657269632e68746d6c|]
+Aug 18 12:43:57 10.71.60.0 u113222279 close "/elements.html" bytes read 25373 written 0
+Aug 18 12:43:57 10.71.60.0 u113222279 [10.71.60.0|get|0|25373|0|0|0|2f656c656d656e74732e68746d6c|]
+Aug 18 12:43:57 10.71.60.0 u113222279 Connection closed by 10.71.60.0 port 63376
+Aug 18 12:43:57 10.71.60.0 u113222279 session closed for local user u113222279 from [10.71.60.0]
+Aug 18 12:43:57 10.71.60.0 u113222279 open "/index.html" flags READ mode 0666
+Aug 18 12:43:57 10.71.60.0 u113222279 close "/index.html" bytes read 10475 written 0
+Aug 18 12:43:57 10.71.60.0 u113222279 [10.71.60.0|get|0|10475|0|0|0|2f696e6465782e68746d6c|]
+Aug 18 12:43:57 10.71.60.0 u113222279 Connection closed by 10.71.60.0 port 63372
+Aug 18 12:43:57 10.71.60.0 u113222279 session closed for local user u113222279 from [10.71.60.0]
+Aug 18 12:43:57 10.71.60.0 u113222279 Connection from 10.71.60.0 port 63380 on 216.250.113.178 port 22 rdomain ""
+Aug 18 12:43:58 10.71.60.0 u113222279 Accepted password for u113222279 from 10.71.60.0 port 63380 ssh2
+Aug 18 12:43:58 10.71.60.0 u113222279 Starting session: subsystem 'sftp' for u113222279 from 10.71.60.0 port 63380 id 0
+Aug 18 12:43:58 10.71.60.0 u113222279 session opened for local user u113222279 from [10.71.60.0]
+Aug 18 12:43:58 10.71.60.0 u113222279 Connection from 10.71.60.0 port 63382 on 216.250.113.178 port 22 rdomain ""
+Aug 18 12:43:58 10.71.60.0 u113222279 Accepted password for u113222279 from 10.71.60.0 port 63382 ssh2
+Aug 18 12:43:58 10.71.60.0 u113222279 Starting session: subsystem 'sftp' for u113222279 from 10.71.60.0 port 63382 id 0
+Aug 18 12:43:58 10.71.60.0 u113222279 session opened for local user u113222279 from [10.71.60.0]
+Aug 18 12:43:58 10.71.60.0 u113222279 open "/assets/sass/main.scss" flags READ mode 0666
+Aug 18 12:43:59 10.71.60.0 u113222279 close "/assets/sass/main.scss" bytes read 1617 written 0
+Aug 18 12:43:59 10.71.60.0 u113222279 [10.71.60.0|get|1|1617|0|0|0|2f6173736574732f736173732f6d61696e2e73637373|]
+Aug 18 12:43:59 10.71.60.0 u113222279 open "/assets/sass/components/_table.scss" flags READ mode 0666
+Aug 18 12:43:59 10.71.60.0 u113222279 close "/assets/sass/components/_table.scss" bytes read 1291 written 0
+Aug 18 12:43:59 10.71.60.0 u113222279 [10.71.60.0|get|0|1291|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f7461626c652e73637373|]
+Aug 18 12:43:59 10.71.60.0 u113222279 open "/assets/sass/components/_box.scss" flags READ mode 0666
+Aug 18 12:43:59 10.71.60.0 u113222279 open "/assets/sass/components/_image.scss" flags READ mode 0666
+Aug 18 12:43:59 10.71.60.0 u113222279 close "/assets/sass/components/_box.scss" bytes read 515 written 0
+Aug 18 12:43:59 10.71.60.0 u113222279 [10.71.60.0|get|0|515|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f626f782e73637373|]
+Aug 18 12:43:59 10.71.60.0 u113222279 close "/assets/sass/components/_image.scss" bytes read 1107 written 0
+Aug 18 12:43:59 10.71.60.0 u113222279 [10.71.60.0|get|0|1107|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f696d6167652e73637373|]
+Aug 18 12:43:59 10.71.60.0 u113222279 open "/assets/sass/components/_list.scss" flags READ mode 0666
+Aug 18 12:43:59 10.71.60.0 u113222279 open "/assets/sass/components/_icon.scss" flags READ mode 0666
+Aug 18 12:43:59 10.71.60.0 u113222279 close "/assets/sass/components/_list.scss" bytes read 892 written 0
+Aug 18 12:43:59 10.71.60.0 u113222279 [10.71.60.0|get|0|892|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f6c6973742e73637373|]
+Aug 18 12:43:59 10.71.60.0 u113222279 close "/assets/sass/components/_icon.scss" bytes read 482 written 0
+Aug 18 12:43:59 10.71.60.0 u113222279 [10.71.60.0|get|0|482|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f69636f6e2e73637373|]
+Aug 18 12:44:00 10.71.60.0 u113222279 open "/assets/sass/components/_pagination.scss" flags READ mode 0666
+Aug 18 12:44:00 10.71.60.0 u113222279 open "/assets/sass/components/_posts.scss" flags READ mode 0666
+Aug 18 12:44:00 10.71.60.0 u113222279 close "/assets/sass/components/_pagination.scss" bytes read 1310 written 0
+Aug 18 12:44:00 10.71.60.0 u113222279 [10.71.60.0|get|0|1310|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f706167696e6174696f6e2e73637373|]
+Aug 18 12:44:00 10.71.60.0 u113222279 close "/assets/sass/components/_posts.scss" bytes read 3086 written 0
+Aug 18 12:44:00 10.71.60.0 u113222279 [10.71.60.0|get|0|3086|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f706f7374732e73637373|]
+Aug 18 12:44:00 10.71.60.0 u113222279 open "/assets/sass/components/_section.scss" flags READ mode 0666
+Aug 18 12:44:00 10.71.60.0 u113222279 open "/assets/sass/components/_form.scss" flags READ mode 0666
+Aug 18 12:44:00 10.71.60.0 u113222279 close "/assets/sass/components/_section.scss" bytes read 771 written 0
+Aug 18 12:44:00 10.71.60.0 u113222279 [10.71.60.0|get|0|771|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f73656374696f6e2e73637373|]
+Aug 18 12:44:00 10.71.60.0 u113222279 close "/assets/sass/components/_form.scss" bytes read 3924 written 0
+Aug 18 12:44:00 10.71.60.0 u113222279 [10.71.60.0|get|0|3924|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f666f726d2e73637373|]
+Aug 18 12:44:00 10.71.60.0 u113222279 open "/assets/sass/components/_icons.scss" flags READ mode 0666
+Aug 18 12:44:00 10.71.60.0 u113222279 open "/assets/sass/components/_button.scss" flags READ mode 0666
+Aug 18 12:44:00 10.71.60.0 u113222279 close "/assets/sass/components/_icons.scss" bytes read 424 written 0
+Aug 18 12:44:00 10.71.60.0 u113222279 [10.71.60.0|get|0|424|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f69636f6e732e73637373|]
+Aug 18 12:44:00 10.71.60.0 u113222279 close "/assets/sass/components/_button.scss" bytes read 1757 written 0
+Aug 18 12:44:00 10.71.60.0 u113222279 [10.71.60.0|get|0|1757|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f627574746f6e2e73637373|]
+Aug 18 12:44:01 10.71.60.0 u113222279 open "/assets/sass/components/_actions.scss" flags READ mode 0666
+Aug 18 12:44:01 10.71.60.0 u113222279 open "/assets/sass/components/_row.scss" flags READ mode 0666
+Aug 18 12:44:01 10.71.60.0 u113222279 close "/assets/sass/components/_actions.scss" bytes read 1091 written 0
+Aug 18 12:44:01 10.71.60.0 u113222279 [10.71.60.0|get|0|1091|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f616374696f6e732e73637373|]
+Aug 18 12:44:01 10.71.60.0 u113222279 close "/assets/sass/components/_row.scss" bytes read 630 written 0
+Aug 18 12:44:01 10.71.60.0 u113222279 [10.71.60.0|get|0|630|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f726f772e73637373|]
+Aug 18 12:44:01 10.71.60.0 u113222279 open "/assets/sass/components/_contact.scss" flags READ mode 0666
+Aug 18 12:44:01 10.71.60.0 u113222279 open "/assets/sass/components/_mini-posts.scss" flags READ mode 0666
+Aug 18 12:44:01 10.71.60.0 u113222279 close "/assets/sass/components/_contact.scss" bytes read 760 written 0
+Aug 18 12:44:01 10.71.60.0 u113222279 [10.71.60.0|get|0|760|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f636f6e746163742e73637373|]
+Aug 18 12:44:01 10.71.60.0 u113222279 close "/assets/sass/components/_mini-posts.scss" bytes read 577 written 0
+Aug 18 12:44:01 10.71.60.0 u113222279 [10.71.60.0|get|0|577|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f6d696e692d706f7374732e73637373|]
+Aug 18 12:44:01 10.71.60.0 u113222279 open "/assets/sass/components/_features.scss" flags READ mode 0666
+Aug 18 12:44:02 10.71.60.0 u113222279 close "/assets/sass/components/_features.scss" bytes read 2919 written 0
+Aug 18 12:44:02 10.71.60.0 u113222279 [10.71.60.0|get|1|2919|0|0|0|2f6173736574732f736173732f636f6d706f6e656e74732f5f66656174757265732e73637373|]
+Aug 18 12:44:02 10.71.60.0 u113222279 open "/assets/sass/libs/_vendor.scss" flags READ mode 0666
+Aug 18 12:44:02 10.71.60.0 u113222279 close "/assets/sass/libs/_vendor.scss" bytes read 7355 written 0
+Aug 18 12:44:02 10.71.60.0 u113222279 [10.71.60.0|get|0|7355|0|0|0|2f6173736574732f736173732f6c6962732f5f76656e646f722e73637373|]
+Aug 18 12:44:02 10.71.60.0 u113222279 open "/assets/sass/libs/_breakpoints.scss" flags READ mode 0666
+Aug 18 12:44:02 10.71.60.0 u113222279 open "/assets/sass/libs/_vars.scss" flags READ mode 0666
+Aug 18 12:44:02 10.71.60.0 u113222279 close "/assets/sass/libs/_breakpoints.scss" bytes read 4577 written 0
+Aug 18 12:44:02 10.71.60.0 u113222279 [10.71.60.0|get|0|4577|0|0|0|2f6173736574732f736173732f6c6962732f5f627265616b706f696e74732e73637373|]
+Aug 18 12:44:02 10.71.60.0 u113222279 close "/assets/sass/libs/_vars.scss" bytes read 835 written 0
+Aug 18 12:44:02 10.71.60.0 u113222279 [10.71.60.0|get|0|835|0|0|0|2f6173736574732f736173732f6c6962732f5f766172732e73637373|]
+Aug 18 12:44:02 10.71.60.0 u113222279 open "/assets/sass/libs/_html-grid.scss" flags READ mode 0666
+Aug 18 12:44:02 10.71.60.0 u113222279 open "/assets/sass/libs/_functions.scss" flags READ mode 0666
+Aug 18 12:44:02 10.71.60.0 u113222279 close "/assets/sass/libs/_html-grid.scss" bytes read 2840 written 0
+Aug 18 12:44:02 10.71.60.0 u113222279 [10.71.60.0|get|0|2840|0|0|0|2f6173736574732f736173732f6c6962732f5f68746d6c2d677269642e73637373|]
+Aug 18 12:44:02 10.71.60.0 u113222279 close "/assets/sass/libs/_functions.scss" bytes read 1957 written 0
+Aug 18 12:44:02 10.71.60.0 u113222279 [10.71.60.0|get|0|1957|0|0|0|2f6173736574732f736173732f6c6962732f5f66756e6374696f6e732e73637373|]
+Aug 18 12:44:03 10.71.60.0 u113222279 open "/assets/sass/libs/_mixins.scss" flags READ mode 0666
+Aug 18 12:44:03 10.71.60.0 u113222279 close "/assets/sass/libs/_mixins.scss" bytes read 2218 written 0
+Aug 18 12:44:03 10.71.60.0 u113222279 [10.71.60.0|get|0|2218|0|0|0|2f6173736574732f736173732f6c6962732f5f6d6978696e732e73637373|]
+Aug 18 12:44:03 10.71.60.0 u113222279 sent status No such file
+Aug 18 12:44:03 10.71.60.0 u113222279 open "/assets/sass/base/_page.scss" flags READ mode 0666
+Aug 18 12:44:03 10.71.60.0 u113222279 close "/assets/sass/base/_page.scss" bytes read 1024 written 0
+Aug 18 12:44:03 10.71.60.0 u113222279 [10.71.60.0|get|0|1024|0|0|0|2f6173736574732f736173732f626173652f5f706167652e73637373|]
+Aug 18 12:44:03 10.71.60.0 u113222279 open "/assets/sass/base/_typography.scss" flags READ mode 0666
+Aug 18 12:44:03 10.71.60.0 u113222279 open "/assets/sass/base/_reset.scss" flags READ mode 0666
+Aug 18 12:44:03 10.71.60.0 u113222279 close "/assets/sass/base/_typography.scss" bytes read 3122 written 0
+Aug 18 12:44:03 10.71.60.0 u113222279 [10.71.60.0|get|0|3122|0|0|0|2f6173736574732f736173732f626173652f5f7479706f6772617068792e73637373|]
+Aug 18 12:44:03 10.71.60.0 u113222279 close "/assets/sass/base/_reset.scss" bytes read 1569 written 0
+Aug 18 12:44:03 10.71.60.0 u113222279 [10.71.60.0|get|0|1569|0|0|0|2f6173736574732f736173732f626173652f5f72657365742e73637373|]
+Aug 18 12:44:03 10.71.60.0 u113222279 open "/assets/sass/layout/_menu.scss" flags READ mode 0666
+Aug 18 12:44:04 10.71.60.0 u113222279 open "/assets/sass/layout/_main.scss" flags READ mode 0666
+Aug 18 12:44:04 10.71.60.0 u113222279 close "/assets/sass/layout/_menu.scss" bytes read 1955 written 0
+Aug 18 12:44:04 10.71.60.0 u113222279 [10.71.60.0|get|1|1955|0|0|0|2f6173736574732f736173732f6c61796f75742f5f6d656e752e73637373|]
+Aug 18 12:44:04 10.71.60.0 u113222279 close "/assets/sass/layout/_main.scss" bytes read 993 written 0
+Aug 18 12:44:04 10.71.60.0 u113222279 [10.71.60.0|get|0|993|0|0|0|2f6173736574732f736173732f6c61796f75742f5f6d61696e2e73637373|]
+Aug 18 12:44:04 10.71.60.0 u113222279 open "/assets/sass/layout/_banner.scss" flags READ mode 0666
+Aug 18 12:44:04 10.71.60.0 u113222279 open "/assets/sass/layout/_sidebar.scss" flags READ mode 0666
+Aug 18 12:44:04 10.71.60.0 u113222279 close "/assets/sass/layout/_banner.scss" bytes read 1521 written 0
+Aug 18 12:44:04 10.71.60.0 u113222279 [10.71.60.0|get|0|1521|0|0|0|2f6173736574732f736173732f6c61796f75742f5f62616e6e65722e73637373|]
+Aug 18 12:44:04 10.71.60.0 u113222279 close "/assets/sass/layout/_sidebar.scss" bytes read 4409 written 0
+Aug 18 12:44:04 10.71.60.0 u113222279 [10.71.60.0|get|0|4409|0|0|0|2f6173736574732f736173732f6c61796f75742f5f736964656261722e73637373|]
+Aug 18 12:44:04 10.71.60.0 u113222279 open "/assets/sass/layout/_wrapper.scss" flags READ mode 0666
+Aug 18 12:44:04 10.71.60.0 u113222279 open "/assets/sass/layout/_footer.scss" flags READ mode 0666
+Aug 18 12:44:04 10.71.60.0 u113222279 close "/assets/sass/layout/_wrapper.scss" bytes read 301 written 0
+Aug 18 12:44:04 10.71.60.0 u113222279 [10.71.60.0|get|0|301|0|0|0|2f6173736574732f736173732f6c61796f75742f5f777261707065722e73637373|]
+Aug 18 12:44:04 10.71.60.0 u113222279 close "/assets/sass/layout/_footer.scss" bytes read 296 written 0
+Aug 18 12:44:04 10.71.60.0 u113222279 [10.71.60.0|get|0|296|0|0|0|2f6173736574732f736173732f6c61796f75742f5f666f6f7465722e73637373|]
+Aug 18 12:44:04 10.71.60.0 u113222279 open "/assets/sass/layout/_header.scss" flags READ mode 0666
+Aug 18 12:44:05 10.71.60.0 u113222279 open "/assets/css/fontawesome-all.min.css" flags READ mode 0666
+Aug 18 12:44:05 10.71.60.0 u113222279 close "/assets/sass/layout/_header.scss" bytes read 904 written 0
+Aug 18 12:44:05 10.71.60.0 u113222279 [10.71.60.0|get|1|904|0|0|0|2f6173736574732f736173732f6c61796f75742f5f6865616465722e73637373|]
+Aug 18 12:44:05 10.71.60.0 u113222279 close "/assets/css/fontawesome-all.min.css" bytes read 59401 written 0
+Aug 18 12:44:05 10.71.60.0 u113222279 [10.71.60.0|get|0|59401|0|0|0|2f6173736574732f6373732f666f6e74617765736f6d652d616c6c2e6d696e2e637373|]
+Aug 18 12:44:05 10.71.60.0 u113222279 open "/assets/css/main.css" flags READ mode 0666
+Aug 18 12:44:05 10.71.60.0 u113222279 open "/assets/js/browser.min.js" flags READ mode 0666
+Aug 18 12:44:05 10.71.60.0 u113222279 close "/assets/css/main.css" bytes read 61737 written 0
+Aug 18 12:44:05 10.71.60.0 u113222279 [10.71.60.0|get|0|61737|0|0|0|2f6173736574732f6373732f6d61696e2e637373|]
+Aug 18 12:44:05 10.71.60.0 u113222279 close "/assets/js/browser.min.js" bytes read 2051 written 0
+Aug 18 12:44:05 10.71.60.0 u113222279 [10.71.60.0|get|0|2051|0|0|0|2f6173736574732f6a732f62726f777365722e6d696e2e6a73|]
+Aug 18 12:44:05 10.71.60.0 u113222279 open "/assets/js/util.js" flags READ mode 0666
+Aug 18 12:44:05 10.71.60.0 u113222279 open "/assets/js/breakpoints.min.js" flags READ mode 0666
+Aug 18 12:44:06 10.71.60.0 u113222279 close "/assets/js/util.js" bytes read 12433 written 0
+Aug 18 12:44:06 10.71.60.0 u113222279 [10.71.60.0|get|1|12433|0|0|0|2f6173736574732f6a732f7574696c2e6a73|]
+Aug 18 12:44:06 10.71.60.0 u113222279 close "/assets/js/breakpoints.min.js" bytes read 2439 written 0
+Aug 18 12:44:06 10.71.60.0 u113222279 [10.71.60.0|get|1|2439|0|0|0|2f6173736574732f6a732f627265616b706f696e74732e6d696e2e6a73|]
+Aug 18 12:44:06 10.71.60.0 u113222279 open "/assets/js/main.js" flags READ mode 0666
+Aug 18 12:44:06 10.71.60.0 u113222279 open "/assets/js/jquery.min.js" flags READ mode 0666
+Aug 18 12:44:06 10.71.60.0 u113222279 close "/assets/js/main.js" bytes read 5968 written 0
+Aug 18 12:44:06 10.71.60.0 u113222279 [10.71.60.0|get|0|5968|0|0|0|2f6173736574732f6a732f6d61696e2e6a73|]
+Aug 18 12:44:06 10.71.60.0 u113222279 close "/assets/js/jquery.min.js" bytes read 89501 written 0
+Aug 18 12:44:06 10.71.60.0 u113222279 [10.71.60.0|get|0|89501|0|0|0|2f6173736574732f6a732f6a71756572792e6d696e2e6a73|]
+Aug 18 12:44:06 10.71.60.0 u113222279 open "/assets/webfonts/fa-brands-400.eot" flags READ mode 0666
+Aug 18 12:44:06 10.71.60.0 u113222279 open "/assets/webfonts/fa-brands-400.ttf" flags READ mode 0666
+Aug 18 12:44:06 10.71.60.0 u113222279 close "/assets/webfonts/fa-brands-400.eot" bytes read 134294 written 0
+Aug 18 12:44:06 10.71.60.0 u113222279 [10.71.60.0|get|0|134294|0|0|0|2f6173736574732f776562666f6e74732f66612d6272616e64732d3430302e656f74|]
+Aug 18 12:44:07 10.71.60.0 u113222279 close "/assets/webfonts/fa-brands-400.ttf" bytes read 133988 written 0
+Aug 18 12:44:07 10.71.60.0 u113222279 [10.71.60.0|get|1|133988|0|0|0|2f6173736574732f776562666f6e74732f66612d6272616e64732d3430302e747466|]
+Aug 18 12:44:07 10.71.60.0 u113222279 open "/assets/webfonts/fa-brands-400.svg" flags READ mode 0666
+Aug 18 12:44:07 10.71.60.0 u113222279 open "/assets/webfonts/fa-brands-400.woff" flags READ mode 0666
+Aug 18 12:44:07 10.71.60.0 u113222279 close "/assets/webfonts/fa-brands-400.woff" bytes read 89988 written 0
+Aug 18 12:44:07 10.71.60.0 u113222279 [10.71.60.0|get|0|89988|0|0|0|2f6173736574732f776562666f6e74732f66612d6272616e64732d3430302e776f6666|]
+Aug 18 12:44:07 10.71.60.0 u113222279 close "/assets/webfonts/fa-brands-400.svg" bytes read 747927 written 0
+Aug 18 12:44:07 10.71.60.0 u113222279 [10.71.60.0|get|0|747927|0|0|0|2f6173736574732f776562666f6e74732f66612d6272616e64732d3430302e737667|]
+Aug 18 12:44:07 10.71.60.0 u113222279 open "/assets/webfonts/fa-brands-400.woff2" flags READ mode 0666
+Aug 18 12:44:07 10.71.60.0 u113222279 open "/assets/webfonts/fa-regular-400.woff" flags READ mode 0666
+Aug 18 12:44:07 10.71.60.0 u113222279 close "/assets/webfonts/fa-brands-400.woff2" bytes read 76736 written 0
+Aug 18 12:44:07 10.71.60.0 u113222279 [10.71.60.0|get|0|76736|0|0|0|2f6173736574732f776562666f6e74732f66612d6272616e64732d3430302e776f666632|]
+Aug 18 12:44:07 10.71.60.0 u113222279 close "/assets/webfonts/fa-regular-400.woff" bytes read 16276 written 0
+Aug 18 12:44:07 10.71.60.0 u113222279 [10.71.60.0|get|0|16276|0|0|0|2f6173736574732f776562666f6e74732f66612d726567756c61722d3430302e776f6666|]
+Aug 18 12:44:07 10.71.60.0 u113222279 open "/assets/webfonts/fa-solid-900.woff" flags READ mode 0666
+Aug 18 12:44:07 10.71.60.0 u113222279 open "/assets/webfonts/fa-solid-900.woff2" flags READ mode 0666
+Aug 18 12:44:07 10.71.60.0 u113222279 close "/assets/webfonts/fa-solid-900.woff" bytes read 101648 written 0
+Aug 18 12:44:07 10.71.60.0 u113222279 [10.71.60.0|get|0|101648|0|0|0|2f6173736574732f776562666f6e74732f66612d736f6c69642d3930302e776f6666|]
+Aug 18 12:44:08 10.71.60.0 u113222279 close "/assets/webfonts/fa-solid-900.woff2" bytes read 78268 written 0
+Aug 18 12:44:08 10.71.60.0 u113222279 [10.71.60.0|get|1|78268|0|0|0|2f6173736574732f776562666f6e74732f66612d736f6c69642d3930302e776f666632|]
+Aug 18 12:44:08 10.71.60.0 u113222279 open "/assets/webfonts/fa-solid-900.svg" flags READ mode 0666
+Aug 18 12:44:08 10.71.60.0 u113222279 open "/assets/webfonts/fa-solid-900.ttf" flags READ mode 0666
+Aug 18 12:44:08 10.71.60.0 u113222279 close "/assets/webfonts/fa-solid-900.svg" bytes read 918991 written 0
+Aug 18 12:44:08 10.71.60.0 u113222279 [10.71.60.0|get|0|918991|0|0|0|2f6173736574732f776562666f6e74732f66612d736f6c69642d3930302e737667|]
+Aug 18 12:44:08 10.71.60.0 u113222279 close "/assets/webfonts/fa-solid-900.ttf" bytes read 202744 written 0
+Aug 18 12:44:08 10.71.60.0 u113222279 [10.71.60.0|get|0|202744|0|0|0|2f6173736574732f776562666f6e74732f66612d736f6c69642d3930302e747466|]
+Aug 18 12:44:08 10.71.60.0 u113222279 open "/assets/webfonts/fa-regular-400.eot" flags READ mode 0666
+Aug 18 12:44:08 10.71.60.0 u113222279 open "/assets/webfonts/fa-solid-900.eot" flags READ mode 0666
+Aug 18 12:44:08 10.71.60.0 u113222279 close "/assets/webfonts/fa-regular-400.eot" bytes read 34034 written 0
+Aug 18 12:44:08 10.71.60.0 u113222279 [10.71.60.0|get|0|34034|0|0|0|2f6173736574732f776562666f6e74732f66612d726567756c61722d3430302e656f74|]
+Aug 18 12:44:08 10.71.60.0 u113222279 close "/assets/webfonts/fa-solid-900.eot" bytes read 203030 written 0
+Aug 18 12:44:08 10.71.60.0 u113222279 [10.71.60.0|get|0|203030|0|0|0|2f6173736574732f776562666f6e74732f66612d736f6c69642d3930302e656f74|]
+Aug 18 12:44:08 10.71.60.0 u113222279 open "/assets/webfonts/fa-regular-400.svg" flags READ mode 0666
+Aug 18 12:44:08 10.71.60.0 u113222279 open "/assets/webfonts/fa-regular-400.ttf" flags READ mode 0666
+Aug 18 12:44:09 10.71.60.0 u113222279 close "/assets/webfonts/fa-regular-400.svg" bytes read 144714 written 0
+Aug 18 12:44:09 10.71.60.0 u113222279 [10.71.60.0|get|1|144714|0|0|0|2f6173736574732f776562666f6e74732f66612d726567756c61722d3430302e737667|]
+Aug 18 12:44:09 10.71.60.0 u113222279 close "/assets/webfonts/fa-regular-400.ttf" bytes read 33736 written 0
+Aug 18 12:44:09 10.71.60.0 u113222279 [10.71.60.0|get|1|33736|0|0|0|2f6173736574732f776562666f6e74732f66612d726567756c61722d3430302e747466|]
+Aug 18 12:44:09 10.71.60.0 u113222279 open "/assets/webfonts/fa-regular-400.woff2" flags READ mode 0666
+Aug 18 12:44:09 10.71.60.0 u113222279 close "/assets/webfonts/fa-regular-400.woff2" bytes read 13224 written 0
+Aug 18 12:44:09 10.71.60.0 u113222279 [10.71.60.0|get|0|13224|0|0|0|2f6173736574732f776562666f6e74732f66612d726567756c61722d3430302e776f666632|]
+Aug 18 12:44:09 10.71.60.0 u113222279 open "/images/pic05.jpg" flags READ mode 0666
+Aug 18 12:44:09 10.71.60.0 u113222279 close "/images/pic05.jpg" bytes read 21497 written 0
+Aug 18 12:44:09 10.71.60.0 u113222279 [10.71.60.0|get|0|21497|0|0|0|2f696d616765732f70696330352e6a7067|]
+Aug 18 12:44:09 10.71.60.0 u113222279 open "/images/pic01.jpg" flags READ mode 0666
+Aug 18 12:44:09 10.71.60.0 u113222279 open "/images/pic03.jpg" flags READ mode 0666
+Aug 18 12:44:09 10.71.60.0 u113222279 close "/images/pic01.jpg" bytes read 20660 written 0
+Aug 18 12:44:09 10.71.60.0 u113222279 [10.71.60.0|get|0|20660|0|0|0|2f696d616765732f70696330312e6a7067|]
+Aug 18 12:44:09 10.71.60.0 u113222279 close "/images/pic03.jpg" bytes read 21127 written 0
+Aug 18 12:44:09 10.71.60.0 u113222279 [10.71.60.0|get|0|21127|0|0|0|2f696d616765732f70696330332e6a7067|]
+Aug 18 12:44:09 10.71.60.0 u113222279 open "/images/pic11.jpg" flags READ mode 0666
+Aug 18 12:44:10 10.71.60.0 u113222279 open "/images/pic10.jpg" flags READ mode 0666
+Aug 18 12:44:10 10.71.60.0 u113222279 close "/images/pic11.jpg" bytes read 99292 written 0
+Aug 18 12:44:10 10.71.60.0 u113222279 [10.71.60.0|get|1|99292|0|0|0|2f696d616765732f70696331312e6a7067|]
+Aug 18 12:44:10 10.71.60.0 u113222279 close "/images/pic10.jpg" bytes read 70746 written 0
+Aug 18 12:44:10 10.71.60.0 u113222279 [10.71.60.0|get|0|70746|0|0|0|2f696d616765732f70696331302e6a7067|]
+Aug 18 12:44:10 10.71.60.0 u113222279 open "/images/pic02.jpg" flags READ mode 0666
+Aug 18 12:44:10 10.71.60.0 u113222279 open "/images/pic08.jpg" flags READ mode 0666
+Aug 18 12:44:10 10.71.60.0 u113222279 close "/images/pic02.jpg" bytes read 20986 written 0
+Aug 18 12:44:10 10.71.60.0 u113222279 [10.71.60.0|get|0|20986|0|0|0|2f696d616765732f70696330322e6a7067|]
+Aug 18 12:44:10 10.71.60.0 u113222279 close "/images/pic08.jpg" bytes read 10934 written 0
+Aug 18 12:44:10 10.71.60.0 u113222279 [10.71.60.0|get|0|10934|0|0|0|2f696d616765732f70696330382e6a7067|]
+Aug 18 12:44:10 10.71.60.0 u113222279 open "/images/pic09.jpg" flags READ mode 0666
+Aug 18 12:44:10 10.71.60.0 u113222279 open "/images/pic06.jpg" flags READ mode 0666
+Aug 18 12:44:10 10.71.60.0 u113222279 close "/images/pic09.jpg" bytes read 10350 written 0
+Aug 18 12:44:10 10.71.60.0 u113222279 [10.71.60.0|get|0|10350|0|0|0|2f696d616765732f70696330392e6a7067|]
+Aug 18 12:44:10 10.71.60.0 u113222279 close "/images/pic06.jpg" bytes read 21564 written 0
+Aug 18 12:44:10 10.71.60.0 u113222279 [10.71.60.0|get|0|21564|0|0|0|2f696d616765732f70696330362e6a7067|]
+Aug 18 12:44:10 10.71.60.0 u113222279 open "/images/pic04.jpg" flags READ mode 0666
+Aug 18 12:44:10 10.71.60.0 u113222279 open "/images/pic07.jpg" flags READ mode 0666
+Aug 18 12:44:11 10.71.60.0 u113222279 close "/images/pic04.jpg" bytes read 21412 written 0
+Aug 18 12:44:11 10.71.60.0 u113222279 [10.71.60.0|get|1|21412|0|0|0|2f696d616765732f70696330342e6a7067|]
+Aug 18 12:44:11 10.71.60.0 u113222279 close "/images/pic07.jpg" bytes read 10854 written 0
+Aug 18 12:44:11 10.71.60.0 u113222279 [10.71.60.0|get|1|10854|0|0|0|2f696d616765732f70696330372e6a7067|]
+Aug 18 12:44:11 10.71.60.0 u113222279 open "/logs/access.log.33.5" flags READ mode 0666
+Aug 18 12:44:11 10.71.60.0 u113222279 open "/logs/access.log.33.4.gz" flags READ mode 0666
+Aug 18 12:44:11 10.71.60.0 u113222279 close "/logs/access.log.33.5" bytes read 74972 written 0
+Aug 18 12:44:11 10.71.60.0 u113222279 [10.71.60.0|get|0|74972|0|0|0|2f6c6f67732f6163636573732e6c6f672e33332e35|]
+Aug 18 12:44:11 10.71.60.0 u113222279 close "/logs/access.log.33.4.gz" bytes read 868 written 0
+Aug 18 12:44:11 10.71.60.0 u113222279 [10.71.60.0|get|0|868|0|0|0|2f6c6f67732f6163636573732e6c6f672e33332e342e677a|]
+Aug 18 12:44:11 10.71.60.0 u113222279 open "/logs/access.log.33.3.gz" flags READ mode 0666
+Aug 18 12:44:12 10.71.60.0 u113222279 open "/logs/last_traffic" flags READ mode 0666
+Aug 18 12:44:12 10.71.60.0 u113222279 close "/logs/last_traffic" bytes read 0 written 0
+Aug 18 12:44:12 10.71.60.0 u113222279 [10.71.60.0|get|0|0|0|0|0|2f6c6f67732f6c6173745f74726166666963|]
+Aug 18 12:44:12 10.71.60.0 u113222279 close "/logs/access.log.33.3.gz" bytes read 277 written 0
+Aug 18 12:44:12 10.71.60.0 u113222279 [10.71.60.0|get|1|277|0|0|0|2f6c6f67732f6163636573732e6c6f672e33332e332e677a|]
+Aug 18 12:44:12 10.71.60.0 u113222279 open "/logs/traffic.db" flags READ mode 0666
+Aug 18 12:44:12 10.71.60.0 u113222279 open "/logs/sftp.log" flags READ mode 0666
