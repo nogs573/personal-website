@@ -60,6 +60,29 @@ input, select, textarea {
   -ms-appearance: none;
   appearance: none; }
 
+/* Scrolling container */
+.scrolling-container {
+  width: 100%; /* Adjust the width as needed */
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.scroll-word {
+  display: inline-block;
+  margin-right: 20px; /* Adjust spacing between words */
+  animation: scrollText 1s linear infinite; /* Default animation duration */
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 /* Basic */
 @-ms-viewport {
   width: device-width; }
