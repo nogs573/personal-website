@@ -73,6 +73,7 @@ input, select, textarea {
   width: 100%;
   overflow: hidden;
   cursor: pointer;
+  padding-bottom: 20px;
 }
 
 ul.scroll-list
@@ -95,6 +96,14 @@ ul.scroll-list li
 {
   float: left;
   padding-left: 20px;
+  font-size: 25px;
+}
+
+ul.scroll-list li:hover
+{
+  float: left;
+  padding-left: 20px;
+  font-weight: bold;
 }
 
 /* Basic */

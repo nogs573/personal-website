@@ -1,13 +1,11 @@
 var $scrollingContainer = $(".scrolling-container");
 var $list = $scrollingContainer.find("ul.scroll-list");
 var $clonedList = $list.clone();
-var listWidth = 30;
+var listWidth = 70;
 
 $list.find("li").each(function () {
     listWidth += $(this).outerWidth(true);
 });
-
-var endPos = $scrollingContainer.width() - listWidth;
 
 $list.add($clonedList).css({"width":listWidth + "px"});
 
