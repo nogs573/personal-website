@@ -76,6 +76,32 @@ input, select, textarea {
   padding-bottom: 20px;
 }
 
+/* .scrolling-container::before 
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  width: 5px;
+  height: 100%;
+  background-color: #f56a6a;
+  color: #f56a6a;
+  z-index: 300;
+} */
+
+/* .scrolling-container::after
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -5px;
+  width: 5px;
+  height: 100%;
+  background-color: #f56a6a;
+  color: #f56a6a;
+  z-index: 300;
+} */
+
 ul.scroll-list
 {
   position: relative;
@@ -97,6 +123,7 @@ ul.scroll-list li
   float: left;
   padding-left: 20px;
   font-size: 25px;
+  font-family: "Roboto Slab", serif;
 }
 
 ul.scroll-list li:hover
