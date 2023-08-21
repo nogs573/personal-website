@@ -1,20 +1,36 @@
-const words = document.querySelectorAll('.scrolling-word');
+var $scrollingContainer = $(".scrolling-container");
+var $list = $scrollingContainer.find("ul.scroll-list");
+var $clonedList = $list.clone();
+var listWidth = 30;
 
-words.forEach((word) => {
-    const textLength = word.textContent.length;
-    const animationDuration = textLength * 0.5 + 's'; // Adjust the multiplier as needed
-
-    word.style.animationDuration = animationDuration;
-
-    /*
-    word.addEventListener('mouseenter', () => {
-        word.style.animationPlayState = 'paused';
-        word.style.fontWeight = 'bold'; // Change the style as needed
-    });
-
-    word.addEventListener('mouseleave', () => {
-        word.style.animationPlayState = 'running';
-        word.style.fontWeight = 'normal'; // Reset the style
-    });
-    */
+$list.find("li").each(function () {
+    listWidth += $(this).outerWidth(true);
 });
+
+var endPos = $scrollingContainer.width() - listWidth;
+
+$list.add($clonedList).css({"width":listWidth + "px"});
+
+$clonedList.addClass("cloned").appendTo($scrollingContainer);
+
+//TimelineMax
+var infinite = new TimelineMax({repeat: -1, paused: true});
+var time = 40;
+
+infinite
+  .fromTo($list, time, {rotation:0.01,x:0}, {force3D:true, x: -listWidth, ease: Linear.easeNone}, 0)
+  .fromTo($clonedList, time, {rotation:0.01, x:listWidth}, {force3D:true, x:0, ease: Linear.easeNone}, 0)
+  .set($list, {force3D:true, rotation:0.01, x: listWidth})
+  .to($clonedList, time, {force3D:true, rotation:0.01, x: -listWidth, ease: Linear.easeNone}, time)
+  .to($list, time, {force3D:true, rotation:0.01, x: 0, ease: Linear.easeNone}, time)
+  .progress(1).progress(0)
+  .play();
+
+//Pause/play
+$scrollingContainer.on("mouseenter", 
+function(){
+    infinite.pause();
+}).on("mouseleave", function(){
+    infinite.play();
+});
+

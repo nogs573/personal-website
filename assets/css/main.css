@@ -61,26 +61,40 @@ input, select, textarea {
   appearance: none; }
 
 /* Scrolling container */
-.scrolling-container {
-  width: 100%; /* Adjust the width as needed */
-  overflow: hidden;
-  white-space: nowrap;
+*, *::before, *::after
+{
+  -webkit-box-sizing:padding-box;
+  box-sizing:padding-box;
+}
+
+.scrolling-container
+{
   position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.scroll-word {
+ul.scroll-list
+{
+  position: relative;
   display: inline-block;
-  margin-right: 20px; /* Adjust spacing between words */
-  animation: scrollText 1s linear infinite; /* Default animation duration */
+  list-style: none;
+  padding:0;
+  margin:0;
 }
 
-@keyframes scrollText {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+ul.scroll-list.cloned
+{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+ul.scroll-list li
+{
+  float: left;
+  padding-left: 20px;
 }
 
 /* Basic */
