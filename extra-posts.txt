@@ -4,3 +4,10 @@
 <ul class="actions">
 	<li><a href="https://github.com/nogs573/lyric-explorer" class="button">More</a></li>
 </ul>
+
+<a href="https://github.com/nogs573/lyric-explorer" class="image"><img src="images/lyrics.jpg" alt="" /></a>
+<h3>Lyric Explorer (Travail en cours)</h3>
+<p>Ma méthode préférée pour pratiquer les langues c'est d'écouter de la musique et lire les paroles. L'application web trouve automatiquement les paroles des chansons que vous avez aimées et les présentes dans une belle liste.</p>
+<ul class="actions">
+	<li><a href="https://github.com/nogs573/lyric-explorer" class="button">Détails</a></li>
+</ul>
