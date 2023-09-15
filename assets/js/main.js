@@ -72,15 +72,45 @@
 	// Sidebar.
 		var $sidebar = $('#sidebar'),
 			$sidebar_inner = $sidebar.children('.inner');
+			//,$sidebar_toggle = $('.toggle');
 
 		// Inactive by default on <= large.
-			breakpoints.on('<=large', function() {
+			breakpoints.on('<= large', function() {
 				$sidebar.addClass('inactive');
 			});
 
 			breakpoints.on('>large', function() {
 				$sidebar.removeClass('inactive');
 			});
+
+			// if (breakpoints.is('xlarge')) {
+			// 	disableToggleElement();
+			// } else {
+			// 	enableToggleElement();
+			// }
+		
+			// Function to disable the "toggle" element
+			// function disableToggleElement() {
+			// 	$sidebar_toggle.prop('disabled', true);
+			// }
+		
+			// // Function to enable the "toggle" element
+			// function enableToggleElement() {
+			// 	$sidebar_toggle.prop('disabled', false);
+			// }
+		
+			// Initial state based on the current breakpoint
+			
+		
+			// // Listen for breakpoint changes
+			// breakpoints.on('change', function () {
+			// 	if (breakpoints.is('xlarge')) {
+			// 		disableToggleElement();					
+			// 	} else {
+			// 		enableToggleElement();
+			// 	}
+			// 	$sidebar.addClass('inactive');
+			// });		
 
 		// Hack: Workaround for Chrome/Android scrollbar position bug.
 			if (browser.os == 'android'

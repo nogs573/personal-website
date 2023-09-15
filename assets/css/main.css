@@ -126,6 +126,10 @@ ul.scroll-list li
   font-family: "Roboto Slab", serif;
 }
 
+#english {
+  padding-left: 0; /* Remove the left padding */
+}
+
 ul.scroll-list li:hover
 {
   float: left;

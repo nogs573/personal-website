@@ -1,0 +1,105 @@
+div.info-area 
+{
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.90);
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px; /* Add rounded corners */
+}
+
+#subtitleContainer
+{
+  left: 50%; /* Position horizontally in the center */
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: white; /* White text color for high contrast */
+  font-size: 18px; /* Adjust font size as needed */
+  padding: 10px; /* Add padding for some spacing around the text */
+  border-radius: 5px; /* Add rounded corners for a nice look */
+  position: absolute; /* Position the container absolutely for overlay effect */
+  bottom: 20px; /* Adjust vertical position from the bottom */
+  transform: translateX(-50%); /* Center horizontally */
+  max-width: 80%; /* Limit the maximum width for better readability */
+  text-align: center; /* Center-align the text */
+  opacity: 1; /* Set initial opacity to fully opaque */
+  transition: opacity 0.3s; /* Add smooth opacity transition */
+  display: none;
+}
+  
+button 
+{
+  width: 100px;
+  height: 45px;
+  margin: 15px;
+  vertical-align: top;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  color: white; /* White text color for high contrast */
+  font-size: 18px; /* Adjust font size as needed */
+  border: none; /* Remove default button border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: background-color 0.3s, color 0.3s; /* Add smooth transition for background and text color */
+}
+
+#titleText 
+{
+  font-size: 28px; /* Larger font size for the title */
+  font-weight: bold;
+  color: white; /* Black text color */
+  text-align: center; /* Center-align the text */
+  margin-top: 100px; /* Adjust top margin for vertical centering */
+}
+
+#date {
+  font-size: 18px; /* Font size for the date */
+  color: white; /* Black text color */
+  text-align: center; /* Center-align the text */
+  margin-top: 10px; /* Add some spacing between title and date */
+}
+
+#logoBar 
+{
+  display: flex; /* Use Flexbox for horizontal layout */
+  justify-content: center; /* Space evenly between logos */
+  align-items: flex-end; /* Align logos at the bottom */
+  margin-top: 100px; /* Add some spacing from the date */
+  gap: 50px;
+}
+
+body
+{
+  background-color: #242424;
+}
+
+#logo1,
+#logo2 {
+    width: 150px;
+    height: 200px; /* Set a fixed height for the images */
+    border: 2px solid #333;
+    padding: 5px;
+    object-fit: contain; /* Maintain aspect ratio while fitting within the fixed height */
+}
+
+#selfie-button
+{
+  width: 100px;
+  height: 45px;
+  margin: 15px;
+  vertical-align: bottom;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  color: white; /* White text color for high contrast */
+  font-size: 18px; /* Adjust font size as needed */
+  border: none; /* Remove default button border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: background-color 0.3s, color 0.3s; /* Add smooth transition for background and text color*/
+  position: absolute; 
+  bottom: 0; 
+  left: 50%; 
+  transform: translateX(-50%);
+}
+
+
+
+
+

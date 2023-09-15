@@ -1,0 +1,482 @@
+<!--
+  Adapted from WebXR Tutorial by Marius Noreikis https://www.devbridge.com/articles/ar-app-development-tutorial/
+  WebXR test-bench for Android mobile devices
+  Lorem ipsum voice generated using https://uberduck.ai
+-->
+<!doctype html> 
+<html> 
+  <head> 
+    <meta charset='utf-8'>
+     <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'> 
+     <meta name='mobile-web-app-capable' content='yes'> <meta name='apple-mobile-web-app-capable' content='yes'> 
+     <link rel='stylesheet' href='./css/style.css'> <title>WebXR</title> 
+  </head> 
+  <body> 
+    <div id="overlay"> 
+      <div class="info-area"> 
+        <div id="info"></div> 
+        <button id="xr-button" disabled>Aucun XR</button>
+      </div> 
+      <div id="subtitleContainer"></div>
+    </div> 
+
+    <!-- Home Page Content -->
+    <div id="homePage">
+      <div id="titleText">Démonstration de la réalité augmentée avec WebXR</div>
+      <div id="date">le 10 août 2023</div>
+      <div id="logoBar">
+        <img src="./images/miralupa-logo.jpg" alt="Miralupa-Logo" id="logo1">
+      </div>
+      <!--<button onclick = "window.location.href='./page-selfie.html';" id="selfie-button">Égoportrait</button>-->
+    </div>
+    <audio id ="audioTrack" src ="./audio/lorem-ipsum-quebec.mp3"></audio>
+    
+    <script type="module"> 
+      //javascript
+      
+      import {GLTFLoader} from "./src/GLTFLoader.js"; 
+      import * as THREE from "./src/three.module.js";       
+      
+      //3D Scene
+      let renderer = null; 
+      let scene = null; 
+      let camera = null; 
+      let model = null; 
+      let mixer = null; 
+      let action = null;
+      let reticle = null;
+      let line = null; 
+      let lastFrame = Date.now(); 
+
+      //Audio
+      let audioTrack = null;      
+
+      //Subtitles
+      let subtitleContainer = null;
+      let textUpdates = [];
+      let currentSubtitleIndex = -1;
+      let subtitlesAreVisible = false;
+
+      let setModelNextFrame = false;
+      let camPosAtModelAdd = null;
+      let reticlePosAtModelAdd = null;
+
+      //Buttons
+      let xrButton = document.getElementById('xr-button');
+      let subtitleToggleButton = null;      
+      
+      // to display debug information 
+      const info = document.getElementById('info'); 
+      
+      // to control the xr session 
+      let xrSession = null; 
+      
+      // reference space used within an application 
+      let xrRefSpace = null; 
+      
+      // for hit testing with detected surfaces 
+      let xrHitTestSource = null; 
+      
+      // Canvas OpenGL context used for rendering 
+      let gl = null; 
+      
+      const initScene = (gl, session) => { 
+          scene = new THREE.Scene(); 
+          camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+          
+          //load our gltf model
+          //police.glb looks right with 
+          var loader = new GLTFLoader(); 
+          loader.load( './models/wheel.glb', (gltf) => { 
+            model = gltf.scene; 
+            model.scale.set(0.2,0.2,0.2); 
+            model.castShadow = true; 
+            model.receiveShadow = true;             
+
+            mixer = new THREE.AnimationMixer(model); 
+            action = mixer.clipAction(gltf.animations[0]); 
+            action.setLoop(THREE.LoopRepeat); 
+          }, () => {}, (error) => console.error(error) ); 
+          var light = new THREE.PointLight(0xffffff, 1, 100);           
+          //soft white light 
+          light.position.z = 1; 
+          light.position.y = 5; 
+
+          const ambientLight = new THREE.AmbientLight(0xffffff, 1.5);
+          scene.add(ambientLight);
+          scene.add(light); 
+          
+          // create and configure three.js renderer with XR support 
+          renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, autoClear: true, context: gl, }); 
+          renderer.setPixelRatio(window.devicePixelRatio); 
+          renderer.setSize(window.innerWidth, window.innerHeight); 
+          renderer.xr.enabled = true; 
+          renderer.xr.setReferenceSpaceType('local'); 
+          renderer.xr.setSession(session); 
+          
+          //simple sprite to indicate detected surfaces
+          reticle = new THREE.Mesh( new THREE.RingBufferGeometry(0.15, 0.2, 32).rotateX(-Math.PI/2), new THREE.MeshPhongMaterial({color: 0x0fff00}) );
+          
+          //we'll update matrix later using WebXR hit test pose matrix 
+          reticle.matrixAutoUpdate = false; 
+          reticle.visible = false; 
+          scene.add(reticle); 
+      }; 
+
+      function setupAudio()
+      {
+        //access existing audio element
+        audioTrack = document.getElementById('audioTrack');  
+        audioTrack.addEventListener("ended", function () {
+            turnOffSubtitles();
+            deactivateToggleButton();
+        });
+      }
+
+      function playAudio()
+      {
+        audioTrack.currentTime = 0;
+        audioTrack.play();        
+      }
+
+      function setupSubtitles()
+      {
+        subtitleContainer = document.getElementById('subtitleContainer');
+
+        textUpdates[0] = {time: 2.91, text: 'Lorem ipsum dolor sit amet,'};
+        textUpdates[1] = {time: 5.0, text: 'consectetur adipiscing elit,'};
+        textUpdates[2] = {time: 7.8, text: 'sed do eiusmod tempor incididunt ut'};
+        textUpdates[3] = {time: 10.86, text: 'labore et dolore magna aliqua.'};
+        textUpdates[4] = {time: 13.55, text: 'Ut enim ad minim veniam,'};
+        textUpdates[5] = {time: 17.18, text: 'quis nostrud exercitation ullamco laboris'};
+        textUpdates[6] = {time: 20.51, text: 'nisi ut aliquip ex ea commodo consequat.'};
+        textUpdates[7] = {time: 23.42, text: 'Duis aute irure dolor in reprehenderit'};
+        textUpdates[8] = {time: 26.02, text: 'in voluptate velit esse cillum dolore'};
+        textUpdates[9] = {time: 27.97, text: 'eu fugiat nulla pariatur.'};
+        textUpdates[10] = {time: 30.99, text: 'Excepteur sint occaecat cupidatat non proident,'};
+        textUpdates[11] = {time: 40, text: 'sunt in culpa qui officia deserunt mollit anim id est laborum.'};
+
+        //Initial text display (before any updates)
+        subtitleContainer.textContent = '';   
+
+        const timeUpdateListener = () => 
+        {
+          if (!xrSession)
+          {
+            subtitleContainer.textContent = '';
+            return;
+          }
+          const currentTime = audioTrack.currentTime;
+
+          // Find the corresponding text for the current time
+          const nextSubtitleIndex = textUpdates.findIndex(update =>
+              currentTime < update.time
+          );
+
+          // Update the text container if the next subtitle index is different
+          if (nextSubtitleIndex !== currentSubtitleIndex) 
+          {
+            currentSubtitleIndex = nextSubtitleIndex;
+            subtitleContainer.textContent = currentSubtitleIndex !== -1 ? textUpdates[currentSubtitleIndex].text : '';
+          }
+        };
+
+        //Add event listener for when audio timer updates
+        audioTrack.addEventListener('timeupdate', timeUpdateListener);
+      }
+      
+      function checkXR() 
+      { 
+        if (!window.isSecureContext) 
+        { 
+          document.getElementById("warning").innerText = "WebXR n'est pas disponible. Utilisez un contexte sécure.";
+        } 
+        if (navigator.xr) 
+        { 
+          navigator.xr.addEventListener('devicechange', checkSupportedState);
+          checkSupportedState();
+        } 
+        else 
+        { 
+          document.getElementById("warning").innerText = "WebXR n'éxiste pas pour ce navigateur.";xr-buttononButton
+        } 
+      } 
+      
+      function checkSupportedState() 
+      { 
+        navigator.xr.isSessionSupported('immersive-ar').then((supported) => { 
+          if (supported) 
+          { 
+            xrButton.innerHTML = 'Entrer RA';
+            xrButton.addEventListener('click', onButtonClicked); 
+          } 
+          else 
+          { 
+            xrButton.innerHTML = 'RA non-supporté';
+          } 
+          xrButton.disabled = !supported; 
+        }); 
+      } 
+      
+      function onButtonClicked() 
+      { 
+        if (!xrSession) 
+        { 
+          navigator.xr.requestSession('immersive-ar', 
+          { optionalFeatures: ['dom-overlay'],
+          requiredFeatures: ['local', 'hit-test'],
+          domOverlay: {root: document.getElementById('overlay')} 
+          }).then(onSessionStarted, onRequestSessionError);
+        } 
+        else 
+        { 
+          xrSession.end(); 
+        } 
+      } 
+      
+      function onSessionStarted(session) 
+      { 
+        xrSession = session;
+        xrButton.innerHTML = 'Quitter RA';
+
+        // create a canvas element and WebGL context for rendering 
+        session.addEventListener('end', onSessionEnded);
+        let canvas = document.createElement('canvas');
+        gl = canvas.getContext('webgl', {xrCompatible: true });
+        session.updateRenderState({baseLayer: new XRWebGLLayer(session, gl)});
+        // here we ask for viewer reference space, since we will be casting a ray 
+        // from a viewer towards a detected surface. The results of ray and surface intersection 
+        // will be obtained via xrHitTestSource variable 
+        session.requestReferenceSpace('viewer').then((refSpace) => 
+        {               
+          session.requestHitTestSource({space: refSpace}).then((hitTestSource) => { xrHitTestSource = hitTestSource; });               
+        }); 
+        session.requestReferenceSpace('local').then((refSpace) => 
+        { 
+          xrRefSpace = refSpace;               
+          // start WebXR rendering loop 
+          session.requestAnimationFrame(onXRFrame); 
+        }); 
+        
+        document.getElementById("overlay").addEventListener('click', function(event) {
+          // trigger the placement of the model only if the press was not the the info-area (top bar with buttons)
+          const infoArea = document.querySelector('.info-area');
+          if (!infoArea.contains(event.target)) 
+          {
+              placeObject();
+          }
+        });
+
+        setupAudio();
+        setupSubtitles();  
+
+        if (!subtitleToggleButton)
+        {
+          subtitleToggleButton = document.createElement('button');
+          subtitleToggleButton.id = 'subtitle-toggle';
+          subtitleToggleButton.textContent = 'Sans sous-titres';
+          subtitleToggleButton.addEventListener('click', toggleSubtitles); // Add your click handler function
+          deactivateToggleButton();
+        }
+
+        const infoArea = document.querySelector('.info-area');
+        infoArea.appendChild(subtitleToggleButton);
+        
+        // initialize three.js scene 
+        initScene(gl, session); 
+              
+      } 
+
+      function turnOnSubtitles()
+      {
+        subtitleContainer.style.display = 'block';
+        subtitlesAreVisible = true;
+        subtitleToggleButton.textContent = 'Sans sous-titres';
+      }
+
+      function turnOffSubtitles()
+      {
+        subtitleContainer.style.display = 'none';
+        subtitlesAreVisible = false;
+        subtitleToggleButton.textContent = 'Avec sous-titres';
+      }
+
+      function toggleSubtitles()
+      {
+        if (subtitlesAreVisible)
+        {
+          turnOffSubtitles();
+        }
+        else
+        {
+          turnOnSubtitles();
+        }
+      }
+
+      function deactivateToggleButton()
+      {
+        subtitleToggleButton.disabled = true;
+        subtitleToggleButton.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+      }
+
+      function activateToggleButton()
+      {
+        subtitleToggleButton.disabled = false;
+        subtitleToggleButton.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+      }
+      
+      function onRequestSessionError(ex) 
+      { 
+        document.getElementById('info').innerHTML = "Erreur en commençant la session AR.";
+        console.error(ex.message); 
+      } 
+      
+      function onSessionEnded(event) 
+      { 
+        turnOffSubtitles();
+        deactivateToggleButton();
+        const infoArea = document.querySelector('.info-area');
+        //subtitleToggleButton.removeEventListener('click', toggleSubtitles);
+        infoArea.removeChild(subtitleToggleButton);
+
+        xrSession = null; 
+        xrButton.innerHTML = 'Entrer RA'; 
+        gl = null; 
+        if (xrHitTestSource) 
+          xrHitTestSource.cancel();
+        xrHitTestSource = null;   
+        
+        audioTrack.pause();
+        audioTrack.currentTime = 0;
+
+        audioTrack.removeEventListener('timeupdate', timeUpdateListener);
+        currentSubtitleIndex = -1;
+        subtitleContainer.textContent = '';
+      } 
+      
+      function placeObject() 
+      { 
+        if (reticle.visible && model) 
+        { 
+          reticle.visible = false;
+          xrHitTestSource.cancel(); 
+          xrHitTestSource = null; 
+          
+          //set model position where the reticle was 
+          const pos = reticle.getWorldPosition(); 
+          scene.remove(reticle);  
+
+          //set audio source at new model position
+          //pannerNode.setPosition(pos.x, pos.y, pos.z);        
+          model.position.set(pos.x, pos.y, pos.z);
+          
+          // We have to get the xr camera position from a frame before we place it
+          setModelNextFrame = true;
+          reticlePosAtModelAdd = pos;
+
+          // scene.add(model);
+          // toggleAnimation(); 
+          //instead of placing an object, we toggle animation state 
+          document.getElementById("overlay").removeEventListener('click', placeObject); 
+          //document.getElementById("overlay").addEventListener('click', toggleAnimation); 
+        } 
+      } 
+
+      function getCameraDir()
+      {
+        //CONSIDER MAKING THIS ALWAYS FACE THE CAMERA (for human model)
+        //get angle between camera-to-model vector and reticle's position when added
+        // const lookAtVector = (camPosAtModelAdd.sub(reticlePosAtModelAdd)).normalize();
+        // const forwardVector = new THREE.Vector3(0, 0, -1).applyQuaternion(model.quaternion);
+        // const angle = Math.atan2(lookAtVector.x * forwardVector.z - lookAtVector.z * forwardVector.x, lookAtVector.dot(forwardVector));
+        
+        return Math.PI;
+      }
+      
+      function toggleAnimation()      
+      { 
+        if (action.isRunning()) 
+        { 
+          action.stop(); 
+          action.reset(); 
+        } 
+        else 
+        { 
+          action.play(); 
+        } 
+      } 
+      
+      // Utility function to update animated objects 
+      
+      function updateAnimation() 
+      { 
+        let dt = (Date.now() - lastFrame) / 1000;
+        lastFrame = Date.now(); 
+        if (mixer) 
+        { 
+          mixer.update(dt); 
+        } 
+      } 
+      
+      function onXRFrame(t, frame) 
+      {
+        let session = frame.session;
+        session.requestAnimationFrame(onXRFrame);
+        if (xrHitTestSource) 
+        { 
+          //obtain hit test results by casting a ray from center of device screen 
+          //Results indicate that ray intersected with one or more detected surface 
+          const hitTestResults = frame.getHitTestResults(xrHitTestSource); 
+          if (hitTestResults.length) 
+          { 
+            //obtain a local pose at the intersection point 
+            const pose = hitTestResults[0].getPose(xrRefSpace); 
+            
+            //place a reticle at the intersection point 
+            reticle.matrix.fromArray(pose.transform.matrix); 
+            reticle.visible = true; 
+          } 
+        } 
+        else 
+        { 
+          //don't show reticle if no surfaces are detected by the ray 
+          reticle.visible = false; 
+        }         
+        
+        if (model)
+        {        
+          updateAnimation(); 
+        }
+
+        let pose = frame.getViewerPose(xrRefSpace); 
+        
+        if (pose)
+        {          
+          if (setModelNextFrame)
+          {
+            const pos = pose.transform.position;
+            camPosAtModelAdd = pos;
+            model.rotation.y = getCameraDir();
+            scene.add(model);
+            toggleAnimation();
+            playAudio();
+            activateToggleButton();
+            turnOnSubtitles();
+
+            setModelNextFrame = false;
+          }
+        }
+        
+        //bind gl context that was created with WebXR to threejs renderer 
+        gl.bindFramebuffer(gl.FRAMEBUFFER, session.renderState.baseLayer.framebuffer); 
+        //render the scene 
+        renderer.render(scene, camera);
+        
+        //info.innerHTML = `x:${reticle.position.x.toFixed(2)} y:${reticle.position.toFixed(2)} z:${reticle.position.toFixed(2)}`;               
+      } 
+      
+      checkXR(); 
+
+    </script> 
+  </body> 
+</html>
