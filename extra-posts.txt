@@ -1,0 +1,6 @@
+<a href="https://github.com/nogs573/lyric-explorer" class="image"><img src="images/lyrics.jpg" alt="" /></a>
+<h3>Lyric Explorer (Work in Progress)</h3>
+<p>My favorite laid-back method of language study is to listen to songs in that language and review the lyrics. This app automatically finds the lyrics of songs you have "liked" and displays them in a neat library.</p>
+<ul class="actions">
+	<li><a href="https://github.com/nogs573/lyric-explorer" class="button">More</a></li>
+</ul>
